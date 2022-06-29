@@ -1,0 +1,4 @@
+# Ignore backend files
+/backend/app/__pycache__/
+/backend/venv
+/backend/uplift_api.db

@@ -1,0 +1,9 @@
+anyio==3.6.1
+autopep8==1.6.0
+idna==3.3
+pycodestyle==2.8.0
+pydantic==1.9.1
+sniffio==1.2.0
+starlette==0.19.1
+toml==0.10.2
+typing_extensions==4.2.0
