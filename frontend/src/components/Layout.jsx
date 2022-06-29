@@ -7,10 +7,8 @@ function Layout({ children }) {
   return (
     <>
       <Nav />
-      <Container maxW="10xl" bg="gray.100" centerContent>
-        <Box padding="4" bg="blue.100" color="black" maxW="xl">
+      <Container pb={'50%'} maxW="10xl" bg="gray.100" centerContent>
           <main>{children}</main>
-        </Box>
       </Container>
       <Footer />
     </>

@@ -8,10 +8,10 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaRocket, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 
-const Logo = (props: any) => {
+const Logo = (props) => {
   return (
     <svg
       height={32}
@@ -31,6 +31,7 @@ const Logo = (props: any) => {
   );
 };
 
+
 const SocialButton = ({
   children,
   label,
@@ -43,6 +44,7 @@ const SocialButton = ({
       w={8}
       h={8}
       cursor={"pointer"}
+      target={"__blank"}
       as={"a"}
       href={href}
       display={"inline-flex"}
@@ -64,6 +66,7 @@ export default function Footer() {
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
+      m={"0 auto"}
     >
       <Container
         as={Stack}
@@ -75,16 +78,16 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Logo />
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© {new Date().getFullYear()} Tobias Scott. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
+          <SocialButton label={"Website"} href={"https://www.tobiascscott.com/"}>
+            <FaRocket />
+          </SocialButton>
+          <SocialButton label={"Linkedin"} href={"https://www.linkedin.com/in/tobias-scott-he-him-b3572751/"} >
+            <FaLinkedin/>
+          </SocialButton>
+          <SocialButton label={"Twitter"} href={"https://twitter.com/TobiasCodes12"} >
             <FaTwitter />
-          </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
           </SocialButton>
         </Stack>
       </Container>
