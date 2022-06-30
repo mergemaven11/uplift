@@ -45,7 +45,7 @@ def create_lift(title:str, description:str, db:SessionLocal = Depends(get_db)):
 @app.get("/all_lifts")
 def  get_all_lift_cards(db:SessionLocal = Depends(get_db)):
     """
-    Fetch a list of all Friend object
+    Fetch a list of all Lift object
     Returns a list of objects
     """
     all_lift_cards = crud.get_all_lift_cards(db=db)
@@ -53,4 +53,4 @@ def  get_all_lift_cards(db:SessionLocal = Depends(get_db)):
 
 @app.get("/", tags=["root"])
 async def read_root() -> dict:
-    return {"message": "Welcome to your todo list."}
+    return {"message": "Welcome"}

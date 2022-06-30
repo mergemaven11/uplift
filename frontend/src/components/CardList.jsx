@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from './Card'
+import  {SimpleGrid} from "@chakra-ui/react";
+
+import { faker } from '@faker-js/faker';
+
+//  Mock data
+
+const name = faker.name.findName()
 
 function CardList() {
   const [lifts, setData] = useState([]);
@@ -19,12 +26,13 @@ function CardList() {
   },[]);
 
   return (
-    <div>
+    <>
+    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
     {lifts.map(item => (
-        <Card lift={item}/>
+        <Card name={name} lift={item}/>
     ))} 
-   
-   </div>
+   </SimpleGrid>  
+   </>
   )
 }
 
