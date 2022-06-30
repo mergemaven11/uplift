@@ -39,7 +39,6 @@
     - [:triangular_flag_on_post: Deployment](#triangular_flag_on_post-deployment)
   - [:alarm_clock: Roadmap](#alarm_clock-roadmap)
   - [:wave: Contributing](#wave-contributing)
-    - [:scroll: Code of Conduct](#scroll-code-of-conduct)
   - [:warning: License](#warning-license)
   - [:handshake: Contact](#handshake-contact)
 
@@ -213,13 +212,6 @@ To deploy this project run
 Contributions are always welcome!
 
 See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
 
 
 <!-- License -->
