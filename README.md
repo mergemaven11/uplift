@@ -26,7 +26,7 @@
 
 - [:notebook_with_decorative_cover: Table of Contents](#notebook_with_decorative_cover-table-of-contents)
   - [:star2: About the Project](#star2-about-the-project)
-    - [:camera: Screenshots](#camera-screenshots)
+    - [:camera: Screenshots / Gifs](#camera-screenshots--gifs)
     - [:space_invader: Tech Stack](#space_invader-tech-stack)
     - [:dart: Features](#dart-features)
     - [:art: Color Reference](#art-color-reference)
@@ -49,10 +49,10 @@
 
 
 <!-- Screenshots -->
-### :camera: Screenshots
+### :camera: Screenshots / Gifs
 
 <div align="center"> 
-  <img src="https://i.imgur.com/H0jumdi.gif" alt="screenshot" />
+  <img src="https://i.imgur.com/lKkI2hc.gif" alt="screenshot" />
 </div>
 
 
