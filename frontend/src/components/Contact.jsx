@@ -54,7 +54,7 @@ export default function contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-988888888
+                        +1-988888888
                       </Button>
                       <Button
                         size="md"
@@ -74,7 +74,7 @@ export default function contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                        Karnavati, India
+                        Atlanta, GA
                       </Button>
                     </VStack>
                   </Box>

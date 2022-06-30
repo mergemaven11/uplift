@@ -178,7 +178,7 @@ const DesktopNav = () => {
 
 const NAV_ITEMS = [
   {
-    label: "Reader",
+    label: "View Lifts",
     href: "/",
   },
   {
