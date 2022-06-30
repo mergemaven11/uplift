@@ -4,7 +4,7 @@
   <h1>Uplift</h1>
   
   <p>
-    Uplift is an web application where you can tell a story and uplift others.
+    Uplift is a web application where you can tell a story and uplift others.
   </p>
   
   
