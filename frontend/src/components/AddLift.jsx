@@ -30,21 +30,19 @@ export default function AddLift() {
       title: title,
       description: description,
     };
-      console.log(`This runs first: ${data}`); // Trying to post null data
+      console.log(`Test: ${data}`); // Trying to post null data
+      setData(data)
+  };
+
+  const postData = () => {
     axios()
       .post("http://127.0.0.1:8000/create_lift", data)
-      .then((res) => {
-        setData(res.data);
-        setTitle("");
-        setDescription("");
-        setLoading(false);
-      })
       .catch((err) => {
         console.log(err, data);
         setLoading(false);
         setIsError(true);
       });
-  };
+  }
 
   return (
     <Container mt={"25%"} pr={0} bg={"#fff"} maxH="2xl" maxW="4xl">
@@ -82,7 +80,7 @@ export default function AddLift() {
                 colorScheme={"blue"}
                 variant={"solid"}
                 type="submit"
-                onClick={handleSubmit}
+                onClick={postData}
               >
                 Submit
               </Button>
