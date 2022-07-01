@@ -22,6 +22,7 @@ export default function AddLift() {
   const [isError, setIsError] = useState(false);
   const [data, setData] = useState(null);
 
+    // TODO: Fix form control
   const handleSubmit = () => {
     setLoading(true);
     setIsError(false);

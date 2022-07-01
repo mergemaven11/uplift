@@ -26,7 +26,7 @@ import {
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 
-export default function contact() {
+export default function Contact() {
   return (
     <Container  maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>

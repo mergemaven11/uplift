@@ -9,8 +9,8 @@ function Layout({ children }) {
   return (
     <>
       <Nav />
-      <Container pb={'20%'} maxW="10xl" bg="gray.100" centerContent>
-          <main>{children}</main>
+      <Container pb={'20%'} maxH="10xl" maxW="10xl" bg="gray.100" centerContent>
+          <main >{children}</main>
       </Container>
       <Footer />
     </>
