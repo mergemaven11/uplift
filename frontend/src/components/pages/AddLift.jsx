@@ -35,15 +35,15 @@ export default function AddLift() {
       setData(data)
   };
 
-  const postData = () => {
-    axios()
-      .post("http://127.0.0.1:8000/create_lift", data)
-      .catch((err) => {
-        console.log(err, data);
-        setLoading(false);
-        setIsError(true);
-      });
-  }
+  // const postData = () => {
+  //   axios()
+  //     .post("http://127.0.0.1:8000/create_lift", data)
+  //     .catch((err) => {
+  //       console.log(err, data);
+  //       setLoading(false);
+  //       setIsError(true);
+  //     });
+  // }
 
   return (
     <Container mt={"25%"} pr={0} bg={"#fff"} maxH="2xl" maxW="4xl">
@@ -81,7 +81,7 @@ export default function AddLift() {
                 colorScheme={"blue"}
                 variant={"solid"}
                 type="submit"
-                onClick={postData}
+                onClick={handleSubmit}
               >
                 Submit
               </Button>

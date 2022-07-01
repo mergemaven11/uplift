@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from './Card'
-import  {SimpleGrid} from "@chakra-ui/react";
+import  {SimpleGrid,Container} from "@chakra-ui/react";
 
 import { faker } from '@faker-js/faker';
 
@@ -27,11 +27,13 @@ function CardList() {
 
   return (
     <>
+        <Container h={"960px"}  maxW="full" mt={0} centerContent overflow="hidden">
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
     {lifts.map(item => (
         <Card name={name} lift={item}/>
     ))} 
    </SimpleGrid>  
+  </Container>
    </>
   )
 }
