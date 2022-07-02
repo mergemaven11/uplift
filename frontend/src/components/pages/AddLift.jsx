@@ -27,23 +27,34 @@ export default function AddLift() {
     setLoading(true);
     setIsError(false);
     const data = {
-      id: Math.floor(Math.random() * 100),
+      // id: Math.floor(Math.random() * 100),
       title: title,
       description: description,
     };
-      console.log(`Test: ${data}`); // Trying to post null data
+      console.log("Test", ); // Trying to post null data
       setData(data)
   };
 
-  // const postData = () => {
-  //   axios()
-  //     .post("http://127.0.0.1:8000/create_lift", data)
-  //     .catch((err) => {
-  //       console.log(err, data);
-  //       setLoading(false);
-  //       setIsError(true);
-  //     });
-  // }
+  //  Testing
+  const seeData = () => {
+    alert(data.keys());
+  }
+
+
+  const postData = () => {
+    // axios()
+    //   .post("http://127.0.0.1:8000/create_lift", data)
+    //   .catch((err) => {
+    //     console.log(err, data);
+    //     setLoading(false);
+    //     setIsError(true);
+    //   });
+
+  axios.post('http://127.0.0.1:8000/create_lift', data)
+  .then(res => {
+    return res;
+  });
+  }
 
   return (
     <Container mt={"25%"} pr={0} bg={"#fff"} maxH="2xl" maxW="4xl">
@@ -81,9 +92,17 @@ export default function AddLift() {
                 colorScheme={"blue"}
                 variant={"solid"}
                 type="submit"
-                onClick={handleSubmit}
+                onClick={postData}
               >
                 Submit
+              </Button>
+              <Button
+                colorScheme={"blue"}
+                variant={"solid"}
+                type="submit"
+                onClick={seeData}
+              >
+                Test
               </Button>
               {/* </NavLink> */}
             </Stack>

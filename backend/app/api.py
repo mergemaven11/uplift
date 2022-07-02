@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 # DB import
 from app.database import models
@@ -36,7 +36,7 @@ app.add_middleware(
 )
 
 # create a liftCard enpoint
-@app.post("/create_lift")
+@app.post("/create_lift", status_code=status.HTTP_201_CREATED)
 def create_lift(title:str, description:str, db:SessionLocal = Depends(get_db)):
     lift = crud.create_lift(db=db, title=title, description=description)
     # now we'll return the object
