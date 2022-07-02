@@ -40,7 +40,7 @@ app.add_middleware(
 def create_lift(title:str, description:str, db:SessionLocal = Depends(get_db)):
     lift = crud.create_lift(db=db, title=title, description=description)
     # now we'll return the object
-    return {"liftcard","liftcard"}
+    return {"lift", lift}
 
 @app.get("/all_lifts")
 def  get_all_lift_cards(db:SessionLocal = Depends(get_db)):

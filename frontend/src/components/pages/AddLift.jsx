@@ -22,39 +22,23 @@ export default function AddLift() {
   const [isError, setIsError] = useState(false);
   const [data, setData] = useState(null);
 
-    // TODO: Fix form control
+  // TODO: Fix form control
   const handleSubmit = () => {
     setLoading(true);
     setIsError(false);
     const data = {
-      // id: Math.floor(Math.random() * 100),
       title: title,
       description: description,
     };
-      console.log("Test", ); // Trying to post null data
-      setData(data)
+    setData(data);
+
+    axios.post(
+        `http://127.0.0.1:8000/create_lift?title=${data.title}&description=&{data.description}`
+      )
+      .catch((err) => {
+        console.log(err, data);
+      });
   };
-
-  //  Testing
-  const seeData = () => {
-    alert(data.keys());
-  }
-
-
-  const postData = () => {
-    // axios()
-    //   .post("http://127.0.0.1:8000/create_lift", data)
-    //   .catch((err) => {
-    //     console.log(err, data);
-    //     setLoading(false);
-    //     setIsError(true);
-    //   });
-
-  axios.post('http://127.0.0.1:8000/create_lift', data)
-  .then(res => {
-    return res;
-  });
-  }
 
   return (
     <Container mt={"25%"} pr={0} bg={"#fff"} maxH="2xl" maxW="4xl">
@@ -87,24 +71,16 @@ export default function AddLift() {
               />
             </FormControl>
             <Stack spacing={6}>
-              {/* <NavLink to={"/"}> */}
+              <NavLink to={"/"}>
               <Button
                 colorScheme={"blue"}
                 variant={"solid"}
                 type="submit"
-                onClick={postData}
+                onClick={handleSubmit}
               >
                 Submit
               </Button>
-              <Button
-                colorScheme={"blue"}
-                variant={"solid"}
-                type="submit"
-                onClick={seeData}
-              >
-                Test
-              </Button>
-              {/* </NavLink> */}
+              </NavLink>
             </Stack>
           </Stack>
         </Flex>

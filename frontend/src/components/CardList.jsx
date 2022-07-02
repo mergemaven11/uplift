@@ -27,7 +27,7 @@ function CardList() {
 
   return (
     <>
-        <Container h={"960px"}  maxW="full" mt={0} centerContent overflow="hidden">
+        <Container h={"full"} maxH={"full"}  maxW="full" mt={0} centerContent overflow="hidden">
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
     {lifts.map(item => (
         <Card name={name} lift={item}/>
