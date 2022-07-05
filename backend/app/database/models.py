@@ -15,3 +15,5 @@ class LiftCard (Base):
     #         self.title = title
     #         self.description = description
     #         return LiftCard
+
+# TODO: Add tags, search parameters, images? Maybe... Wrap application around google auth 

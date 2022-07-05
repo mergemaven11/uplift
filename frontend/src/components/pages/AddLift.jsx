@@ -22,7 +22,13 @@ export default function AddLift() {
   const [isError, setIsError] = useState(false);
   const [data, setData] = useState(null);
 
-  // TODO: Fix form control
+  // TODO: Fix form control [DONE]
+
+  //  TODO: Add tags (for searching)
+
+  // TODO: Create test
+
+
   const handleSubmit = () => {
     setLoading(true);
     setIsError(false);

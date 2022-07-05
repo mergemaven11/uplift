@@ -9,6 +9,13 @@ import { faker } from '@faker-js/faker';
 
 const name = faker.name.findName()
 
+// Future Components: 
+
+//  TODO: Add hero title and description
+//  TODO: Add search filtering
+//  TODO: Add Side bar menu (profiles, keep track of lifts, create iframe and share.)
+
+
 function CardList() {
   const [lifts, setData] = useState([]);
 

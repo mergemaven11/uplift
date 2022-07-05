@@ -57,7 +57,7 @@ export default function Nav() {
             color={"blue.400"}
             fontWeight={"bold"}
           >
-            Uplift
+            Upliftt
           </Text>
           <svg
             id="logo-16"
