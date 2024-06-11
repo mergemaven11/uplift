@@ -30,7 +30,6 @@
     - [:space_invader: Tech Stack](#space_invader-tech-stack)
     - [:dart: Features](#dart-features)
     - [:art: Color Reference](#art-color-reference)
-    - [:key: Environment Variables](#key-environment-variables)
   - [:rocket: Getting Started](#rocket-getting-started)
     - [:exclamation: Prerequisites](#exclamation-prerequisites)
     - [:gear: Installation](#gear-installation)
@@ -111,15 +110,6 @@
 | Accent Color | ![#02054B](https://via.placeholder.com/10/02054B?text=+) #02054B |
 | Text Color | ![#4A5568](https://via.placeholder.com/10/4A5568?text=+) #4A5568 |
 
-
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 <!-- Getting Started -->
 ## 	:rocket: Getting Started
