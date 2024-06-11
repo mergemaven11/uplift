@@ -223,7 +223,7 @@ Distributed under the no License. See LICENSE.txt for more information.
 <!-- Contact -->
 ## :handshake: Contact
 
-Your Name - [@TobiasCodes12](https://twitter.com/TobiasCodes12) 
+Name - [@TobiasCodes12](https://twitter.com/TobiasCodes12) 
 
 Project Link: [https://github.com/Tobias2023/uplift](https://github.com/Tobias2023/uplift)
 
